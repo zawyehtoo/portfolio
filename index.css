@@ -1,0 +1,248 @@
+
+body{
+    background-color: white;
+    scroll-behavior: smooth;
+    
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.logo{
+    color: white;
+    font-size: 40px;
+    font-weight: bold ;
+}
+.fs{
+    
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 40px;
+    color: red;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+}
+
+.leftdiv{
+    margin-top:250px ;
+    margin-left: 30px;
+    width: 50%;
+}
+.parent{
+    padding-top: 100px;
+    display: flex;
+    width: 100%;
+}
+.rightdiv{
+    width: 50%;
+    background-image: url('./image/profile\ .png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+    height: 600px ;
+}
+.btn{
+    transition: transform 0.2s ease-in;
+}
+.btn:hover{
+    transform: scale(1.1);
+}
+#services{
+    margin-top: 100px;
+}
+.title{
+    border-bottom: 2px solid #8644DC;
+    width: 60px;
+    color: #8644DC;
+}
+.ph{
+   
+    width: 40px;
+    height: 40px;
+   
+
+}
+.color{
+    color: #8644DC;
+}
+
+.flu{
+    background: #f7effe9a;
+    padding: 60px;
+    
+ 
+}
+.card img{
+    transition: transform 0.3s ease-in;
+    cursor: pointer;
+}
+.card img:hover{
+    transform: scale(1.05);
+}
+.sar h1{
+    font-size: 50px;
+}
+.aboutme{
+    font-family: 'Montserrat', sans-serif;
+}
+.sar p{
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+}
+.progress-bar{
+    background-color: #8644DC;
+}
+.progressbar{
+    padding: 20px;
+}
+.hire {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #343434;
+    font-family: "Montserrat", sans-serif;
+    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: none;
+   }
+   
+   .hire:after {
+    content: " ";
+    width: 0%;
+    height: 100%;
+    background: lightgray;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    right: 0;
+   }
+   
+   .hire:hover::after {
+    right: auto;
+    left: 0;
+    width: 100%;
+   }
+   
+   .hire span {
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 18px 25px;
+    color: #fff;
+    font-size: 1.125em;
+    font-weight: 700;
+    letter-spacing: 4px;
+    z-index: 20;
+    transition: all 0.3s ease-in-out;
+   }
+   
+   .hire:hover span {
+    color: #000;
+    animation: scaleUp 0.3s ease-in-out;
+   }
+   
+   @keyframes scaleUp {
+    0% {
+     transform: scale(1);
+    }
+   
+    50% {
+     transform: scale(0.95);
+    }
+   
+    100% {
+     transform: scale(1);
+    }
+   }
+#contact{
+   
+    padding-top: 30px;
+}
+#contact h2{
+    line-height: 50px;
+}
+.navbar{
+    background-color:rgba(0, 0, 0, 0.856) ;
+    width: 100%;
+    z-index: 1;
+    position:   fixed;
+  
+}
+.textbox{
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 0;
+    outline: none;
+    background-color: #34343465;
+}
+textarea{
+    outline: none;
+    border: 0;
+    border-radius:  10px;
+    padding: 10px;
+    background-color: #34343465;
+}
+textarea:focus{
+    border: 3px solid #8644DC;
+}
+.textbox:focus{
+    border: 3px solid #8644DC;
+}
+.inputgp{
+    display: flex;
+    flex-direction: column ;
+    padding: 50px;
+}
+
+.sendbtn{
+  width: 150px;
+    border: 0px;
+}
+.icons{
+    width: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    
+}
+/* mobile view */
+@media (max-width:700px) {
+    .flu{
+        padding: 20px;
+    }
+    .navbar{
+        padding: 20px;
+        position: unset;
+        background-color:rgb(54, 52, 52);
+    }
+    .skill{
+        margin-top: 50px;
+    }
+    .logo{
+        font-size: 25px;
+        color: #000;
+    }
+    .parent{
+        padding-top: 0px;
+        display: block;
+    }
+    .leftdiv{
+        width: 100%;
+        margin-bottom: 200px;
+    }
+    .rightdiv{
+        width: 100%;
+        border-radius: 0;
+        margin-bottom: 100px;
+    }
+   .fs{
+    color: #000;
+   }
+ .inputgp{
+    padding: 0;
+    padding-top: 40px;
+ }
+}
